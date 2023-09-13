@@ -2,9 +2,10 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-// import corpcommentImg from '@/public/corpcomment.png';
-// import rmtdevImg from '@/public/rmtdev.png';
-// import wordanalyticsImg from '@/public/wordanalytics.png';
+import marketplaceImg from '@/public/marketplace.png';
+import appImg from '@/public/app.png';
+import metaverseImg from '@/public/metaverse.png';
+import golfImg from '@/public/golf.png';
 
 export const links = [
   {
@@ -69,25 +70,26 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'Play Today Marketplace',
+    title: 'Play Today. Marketplace',
     description: 'Lorem',
-    tags: ['React', 'Next.js', 'Postgresql', 'Firebase', 'Zustand'],
-    // imageUrl: corpcommentImg,
+    tags: [
+      'React',
+      'Next.js',
+      'TypeScripte',
+      'Postgresql',
+      'Firebase',
+      'Zustand',
+    ],
+    imageUrl: marketplaceImg,
   },
   {
-    title: 'Play Today App Showcase',
+    title: 'Play Today. App Showcase',
     description: 'Lorem.',
-    tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
-    // imageUrl: rmtdevImg,
+    tags: ['React', 'TypeScript', 'Postgresql', 'Firebase', 'Zustand'],
+    imageUrl: appImg,
   },
   {
-    title: 'Play Today Metaverse',
-    description: 'Lorem.',
-    tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
-    // imageUrl: rmtdevImg,
-  },
-  {
-    title: 'Play Today Golf',
+    title: 'Play Today. Golf',
     description: 'Lorem.',
     tags: [
       'React-Native',
@@ -97,7 +99,13 @@ export const projectsData = [
       'Polygon',
       'AWS',
     ],
-    // imageUrl: wordanalyticsImg,
+    imageUrl: golfImg,
+  },
+  {
+    title: 'Play Today. Metaverse',
+    description: 'Lorem.',
+    tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
+    imageUrl: metaverseImg,
   },
 ] as const;
 
