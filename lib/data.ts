@@ -76,7 +76,7 @@ export const projectsData = [
     tags: [
       'React',
       'Next.js',
-      'TypeScripte',
+      'TypeScript',
       'Postgresql',
       'Firebase',
       'Zustand',
