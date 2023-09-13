@@ -71,7 +71,8 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: 'Play Today. Marketplace',
-    description: 'Lorem',
+    description:
+      "I was in charge of the full project. A marketplace to buy Golf players' NFTs.",
     tags: [
       'React',
       'Next.js',
@@ -80,24 +81,28 @@ export const projectsData = [
       'Firebase',
       'Zustand',
     ],
+    url: ['https://marketplace.playtoday.cc'],
     imageUrl: marketplaceImg,
   },
   {
     title: 'Play Today. App Showcase',
     description: 'Lorem.',
     tags: ['React', 'TypeScript', 'Postgresql', 'Firebase', 'Zustand'],
+    url: ['https://app.playtoday.cc'],
     imageUrl: appImg,
   },
   {
     title: 'Play Today. Golf',
     description: 'Lorem.',
     tags: ['React-Native', 'Mobx', 'Postgresql', 'Firebase', 'Polygon', 'AWS'],
+    url: ['https://playtoday.cc', 'https://golf.playtoday.cc'],
     imageUrl: golfImg,
   },
   {
     title: 'Play Today. Metaverse',
     description: 'Lorem.',
     tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
+    url: ['https://playtoday.cc'],
     imageUrl: metaverseImg,
   },
 ] as const;
