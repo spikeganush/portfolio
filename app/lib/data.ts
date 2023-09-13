@@ -1,0 +1,123 @@
+import React from 'react';
+import { CgWorkAlt } from 'react-icons/cg';
+import { FaReact } from 'react-icons/fa';
+import { LuGraduationCap } from 'react-icons/lu';
+import corpcommentImg from '@/public/corpcomment.png';
+import rmtdevImg from '@/public/rmtdev.png';
+import wordanalyticsImg from '@/public/wordanalytics.png';
+
+export const links = [
+  {
+    name: 'Home',
+    hash: '#home',
+  },
+  {
+    name: 'About',
+    hash: '#about',
+  },
+  {
+    name: 'Projects',
+    hash: '#projects',
+  },
+  {
+    name: 'Skills',
+    hash: '#skills',
+  },
+  {
+    name: 'Experience',
+    hash: '#experience',
+  },
+  {
+    name: 'Contact',
+    hash: '#contact',
+  },
+] as const;
+
+export const experiencesData = [
+  {
+    title: 'Bachelor in Mobile App Development',
+    location: 'Sydney, Australia',
+    description: 'I graduated after 3 years of studying at AIT.',
+    icon: React.createElement(LuGraduationCap),
+    date: '2019-2022',
+  },
+  {
+    title: 'Full-Stack Developer',
+    location: 'Sydney, Australia',
+    description:
+      "I've developed a CMS to organise and update the roster for a private company.",
+    icon: React.createElement(FaReact),
+    date: '2021',
+  },
+  {
+    title: 'Full-stack Developer',
+    location: 'Sydney, Australia',
+    description:
+      'I worked as a full-stack developer for 1 year for Mirk as a full-stack developer. After 8 months, I was promoted to Web Lead Developer.',
+    icon: React.createElement(CgWorkAlt),
+    date: '2022 - 2023',
+  },
+  {
+    title: 'Full-stack Developer',
+    location: 'Sydney, Australia',
+    description:
+      "Looking for a new position. My stack includes React, React-Native, Next.js, TypeScript, Tailwind, MongoDB, Firebase, Postgresql, AWS. I'm open to full-time opportunities.",
+    icon: React.createElement(CgWorkAlt),
+    date: 'Present',
+  },
+] as const;
+
+export const projectsData = [
+  {
+    title: 'Play Today Marketplace',
+    description: 'Lorem',
+    tags: ['React', 'Next.js', 'Postgresql', 'Firebase', 'Zustand'],
+    imageUrl: corpcommentImg,
+  },
+  {
+    title: 'Play Today App Showcase',
+    description: 'Lorem.',
+    tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: 'Play Today Metaverse',
+    description: 'Lorem.',
+    tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: 'Play Today Golf',
+    description: 'Lorem.',
+    tags: [
+      'React-Native',
+      'Mobx',
+      'Postgresql',
+      'Firebase Auth',
+      'Polygon',
+      'AWS',
+    ],
+    imageUrl: wordanalyticsImg,
+  },
+] as const;
+
+export const skillsData = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'React-Native',
+  'Next.js',
+  'Node.js',
+  'Git',
+  'Tailwind',
+  'MongoDB',
+  'Redux',
+  'Mobx',
+  'Firebase',
+  'Zustand',
+  'AWS',
+  'Express',
+  'PostgreSQL',
+] as const;
