@@ -86,21 +86,27 @@ export const projectsData = [
   },
   {
     title: 'Play Today. App Showcase',
-    description: 'Lorem.',
+    description:
+      "I was in charge of the full project. It's a website to showcase the Golf app we have made on React-Native.",
     tags: ['React', 'TypeScript', 'Postgresql', 'Firebase', 'Zustand'],
     url: ['https://app.playtoday.cc'],
     imageUrl: appImg,
   },
   {
     title: 'Play Today. Golf',
-    description: 'Lorem.',
+    description:
+      'I was in charge of all the Wallet section (Show the badges, balance, purchase Crypto,...).',
     tags: ['React-Native', 'Mobx', 'Postgresql', 'Firebase', 'Polygon', 'AWS'],
-    url: ['https://playtoday.cc', 'https://golf.playtoday.cc'],
+    url: [
+      'https://play.google.com/store/apps/details?id=cc.playtoday.golfapp',
+      'https://apps.apple.com/au/app/play-today/id1631790603',
+    ],
     imageUrl: golfImg,
   },
   {
     title: 'Play Today. Metaverse',
-    description: 'Lorem.',
+    description:
+      'The React front-end is here to create a Unity instance to display the WebGL project. All the register/login is handle by the front-end and the data is transfert to the WebGL build.',
     tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
     url: ['https://playtoday.cc'],
     imageUrl: metaverseImg,
