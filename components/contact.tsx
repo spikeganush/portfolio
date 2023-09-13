@@ -50,8 +50,16 @@ const Contact = () => {
           }
 
           toast.success('Email sent successfully!');
-          formData.set('senderEmail', '');
-          formData.set('message', '');
+          // clear the form
+          const allInputs = document.querySelectorAll('input, textarea');
+          allInputs.forEach((input) => {
+            if (
+              input instanceof HTMLInputElement ||
+              input instanceof HTMLTextAreaElement
+            ) {
+              input.value = '';
+            }
+          });
         }}
       >
         <input
