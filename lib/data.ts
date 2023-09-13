@@ -2,9 +2,9 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '@/public/corpcomment.png';
-import rmtdevImg from '@/public/rmtdev.png';
-import wordanalyticsImg from '@/public/wordanalytics.png';
+// import corpcommentImg from '@/public/corpcomment.png';
+// import rmtdevImg from '@/public/rmtdev.png';
+// import wordanalyticsImg from '@/public/wordanalytics.png';
 
 export const links = [
   {
@@ -72,19 +72,19 @@ export const projectsData = [
     title: 'Play Today Marketplace',
     description: 'Lorem',
     tags: ['React', 'Next.js', 'Postgresql', 'Firebase', 'Zustand'],
-    imageUrl: corpcommentImg,
+    // imageUrl: corpcommentImg,
   },
   {
     title: 'Play Today App Showcase',
     description: 'Lorem.',
     tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
-    imageUrl: rmtdevImg,
+    // imageUrl: rmtdevImg,
   },
   {
     title: 'Play Today Metaverse',
     description: 'Lorem.',
     tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
-    imageUrl: rmtdevImg,
+    // imageUrl: rmtdevImg,
   },
   {
     title: 'Play Today Golf',
@@ -97,7 +97,7 @@ export const projectsData = [
       'Polygon',
       'AWS',
     ],
-    imageUrl: wordanalyticsImg,
+    // imageUrl: wordanalyticsImg,
   },
 ] as const;
 
