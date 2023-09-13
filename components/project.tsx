@@ -41,9 +41,9 @@ const Project = ({ title, description, tags, url, imageUrl }: ProjectProps) => {
               url.map((link, index) => (
                 <a href={link} target="_blank" key={`${link}${index}`}>
                   {link.includes('play.google.com') ? (
-                    <IoLogoGooglePlaystore className="text-gray-700 text-4xl inline-block mr-6 mt-4" />
+                    <IoLogoGooglePlaystore className="text-gray-700 text-4xl inline-block mr-6 mt-4 dark:text-white/70" />
                   ) : (
-                    <IoLogoAppleAppstore className="text-gray-700 text-4xl inline-block mt-4" />
+                    <IoLogoAppleAppstore className="text-gray-700 text-4xl inline-block mt-4 dark:text-white/70" />
                   )}
                 </a>
               ))
