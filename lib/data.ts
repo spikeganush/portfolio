@@ -106,7 +106,7 @@ export const projectsData = [
   {
     title: 'Play Today. Metaverse',
     description:
-      'The React front-end is here to create a Unity instance to display the WebGL project. All the register/login is handle by the front-end and the data is transfert to the WebGL build.',
+      'The React front-end initializes a Unity instance to render the WebGL project and manages user authentication, transferring the data to the WebGL build.',
     tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
     url: ['https://playtoday.cc'],
     imageUrl: metaverseImg,
