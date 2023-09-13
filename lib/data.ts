@@ -91,14 +91,7 @@ export const projectsData = [
   {
     title: 'Play Today. Golf',
     description: 'Lorem.',
-    tags: [
-      'React-Native',
-      'Mobx',
-      'Postgresql',
-      'Firebase Auth',
-      'Polygon',
-      'AWS',
-    ],
+    tags: ['React-Native', 'Mobx', 'Postgresql', 'Firebase', 'Polygon', 'AWS'],
     imageUrl: golfImg,
   },
   {
