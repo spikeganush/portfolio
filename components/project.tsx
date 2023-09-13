@@ -39,7 +39,7 @@ const Project = ({ title, description, tags, url, imageUrl }: ProjectProps) => {
               </a>
             ) : (
               url.map((link, index) => (
-                <a href={link} target="_blank">
+                <a href={link} target="_blank" key={`${link}${index}`}>
                   {link.includes('play.google.com') ? (
                     <IoLogoGooglePlaystore className="text-gray-700 text-4xl inline-block mr-6 mt-4" />
                   ) : (
