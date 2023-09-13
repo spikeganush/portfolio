@@ -47,7 +47,7 @@ export const experiencesData = [
     location: 'Sydney, Australia',
     description:
       "I've developed a CMS to organise and update the roster for a private company.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: '2021',
   },
   {
@@ -63,7 +63,7 @@ export const experiencesData = [
     location: 'Sydney, Australia',
     description:
       "Looking for a new position. My stack includes React, React-Native, Next.js, TypeScript, Tailwind, MongoDB, Firebase, Postgresql, AWS. I'm open to full-time opportunities.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(FaReact),
     date: 'Present',
   },
 ] as const;

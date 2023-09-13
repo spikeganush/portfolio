@@ -50,6 +50,8 @@ const Contact = () => {
           }
 
           toast.success('Email sent successfully!');
+          formData.set('senderEmail', '');
+          formData.set('message', '');
         }}
       >
         <input

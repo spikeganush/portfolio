@@ -44,6 +44,9 @@ export default function ThemeContextProvider({
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setTheme('dark');
       document.documentElement.classList.add('dark');
+    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      setTheme('light');
+      document.documentElement.classList.remove('dark');
     }
   }, []);
 
