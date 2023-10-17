@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/florian.jpeg"
+              src="/florian.webp"
               alt="Florian portrait"
               width="192"
               height="192"
