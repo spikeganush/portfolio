@@ -2,10 +2,10 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import marketplaceImg from '@/public/marketplace.png';
-import appImg from '@/public/app.png';
-import metaverseImg from '@/public/metaverse.png';
-import golfImg from '@/public/golf.png';
+import marketplaceImg from '@/public/marketplace.webp';
+import appImg from '@/public/app.webp';
+import metaverseImg from '@/public/metaverse.webp';
+import golfImg from '@/public/golf.webp';
 
 export const links = [
   {
