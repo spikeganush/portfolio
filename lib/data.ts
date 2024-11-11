@@ -54,9 +54,17 @@ export const experiencesData = [
     title: 'Full-stack Developer',
     location: 'Sydney, Australia',
     description:
-      'I worked as a full-stack developer for 1 year for Mirk as a full-stack developer. After 8 months, I was promoted to Web Lead Developer.',
+      'I worked as a full-stack developer for 1 year for Mirk After 8 months, I was promoted to Web Lead Developer.',
     icon: React.createElement(CgWorkAlt),
     date: '2022 - 2023',
+  },
+  {
+    title: 'Senior Frontend Developer',
+    location: 'Sydney, Australia',
+    description:
+      'Senior Frontend Developer, Australian Catholic University. Managed and maintained the suite of ACU websites, as well as developed new sites as needed. Concurrently undertook the migration of all existing components to React, supporting ACU’s transition to Sitecore 10 and enabling headless CMS capabilities. Designed and implemented reusable components in Storybook, creating a robust, scalable foundation for future development.',
+    icon: React.createElement(CgWorkAlt),
+    date: '2023 - Present',
   },
   {
     title: 'Full-stack Developer',
@@ -116,12 +124,14 @@ export const projectsData = [
 export const skillsData = [
   'HTML',
   'CSS',
+  'SASS',
   'JavaScript',
   'TypeScript',
   'React',
   'React-Native',
   'Next.js',
   'Node.js',
+  'jQuery',
   'Git',
   'Tailwind',
   'MongoDB',
@@ -129,7 +139,9 @@ export const skillsData = [
   'Mobx',
   'Firebase',
   'Zustand',
+  'Storybook',
   'AWS',
+  'Azure',
   'Express',
   'PostgreSQL',
 ] as const;
