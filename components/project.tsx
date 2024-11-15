@@ -2,11 +2,17 @@
 
 import { useRef } from 'react';
 import { projectsData } from '@/lib/data';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { IoLogoGooglePlaystore, IoLogoAppleAppstore } from 'react-icons/io5';
 
-type ProjectProps = (typeof projectsData)[number];
+export type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[];
+  url: string[];
+  imageUrl: StaticImageData;
+};
 
 const Project = ({ title, description, tags, url, imageUrl }: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -24,35 +30,35 @@ const Project = ({ title, description, tags, url, imageUrl }: ProjectProps) => {
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className='group mb-3 sm:mb-8 last:mb-0'
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[25rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+      <section className='bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[25rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20'>
+        <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]'>
+          <h3 className='text-2xl font-semibold'>{title}</h3>
+          <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>
             {description}
           </p>
-          <p className="mt-4">
+          <p className='mt-4'>
             {url.length === 1 ? (
-              <a href={url[0]} target="_blank" className="font-bold">
+              <a href={url[0]} target='_blank' className='font-bold'>
                 {url[0]}
               </a>
             ) : (
               url.map((link, index) => (
-                <a href={link} target="_blank" key={`${link}${index}`}>
+                <a href={link} target='_blank' key={`${link}${index}`}>
                   {link.includes('play.google.com') ? (
-                    <IoLogoGooglePlaystore className="text-gray-700 text-4xl inline-block mr-6 mt-4 dark:text-white/70" />
+                    <IoLogoGooglePlaystore className='text-gray-700 text-4xl inline-block mr-6 mt-4 dark:text-white/70' />
                   ) : (
-                    <IoLogoAppleAppstore className="text-gray-700 text-4xl inline-block mt-4 dark:text-white/70" />
+                    <IoLogoAppleAppstore className='text-gray-700 text-4xl inline-block mt-4 dark:text-white/70' />
                   )}
                 </a>
               ))
             )}
           </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
             {tags.map((tag, index) => (
               <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70'
                 key={index}
               >
                 {tag}
@@ -63,9 +69,9 @@ const Project = ({ title, description, tags, url, imageUrl }: ProjectProps) => {
 
         <Image
           src={imageUrl}
-          alt="Project I worked on"
+          alt='Project I worked on'
           quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3
@@ -76,7 +82,7 @@ const Project = ({ title, description, tags, url, imageUrl }: ProjectProps) => {
         group-even:group-hover:translate-y-3
         group-even:group-hover:rotate-2
 
-        group-even:right-[initial] group-even:-left-40"
+        group-even:right-[initial] group-even:-left-40'
         />
       </section>
     </motion.div>

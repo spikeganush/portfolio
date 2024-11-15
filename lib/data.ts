@@ -6,6 +6,8 @@ import marketplaceImg from '@/public/marketplace.webp';
 import appImg from '@/public/app.webp';
 import metaverseImg from '@/public/metaverse.webp';
 import golfImg from '@/public/golf.webp';
+import youkhanaImg from '@/public/youkhana.webp';
+import { ProjectProps } from '@/components/project';
 
 export const links = [
   {
@@ -76,7 +78,23 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const projectsData: ProjectProps[] = [
+  {
+    title: 'Youkhana Shopify Store',
+    description:
+      'I made the Youkhana Website/Store following the artist’s design. The main page has a gallery using the Instagram API. The store is made with Shopify API.',
+    tags: [
+      'Shopify',
+      'NextJs',
+      'TypeScript',
+      'Tailwind',
+      'Framer motion',
+      'Instagram API',
+      'Resend Email',
+    ],
+    url: ['https://youkhana.info'],
+    imageUrl: youkhanaImg,
+  },
   {
     title: 'Play Today. Marketplace',
     description:
