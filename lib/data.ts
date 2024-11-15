@@ -137,7 +137,7 @@ export const projectsData: ProjectProps[] = [
     url: ['https://playtoday.cc'],
     imageUrl: metaverseImg,
   },
-] as const;
+];
 
 export const skillsData = [
   'HTML',
