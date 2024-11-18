@@ -5,11 +5,16 @@ import Image, { StaticImageData } from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { IoLogoGooglePlaystore, IoLogoAppleAppstore } from 'react-icons/io5';
 
+export type ProjectUrl = {
+  url: string;
+  online: boolean;
+};
+
 export type ProjectProps = {
   title: string;
   description: string;
   tags: string[];
-  url: string[];
+  url: ProjectUrl[];
   imageUrl: StaticImageData;
 };
 
@@ -39,13 +44,17 @@ const Project = ({ title, description, tags, url, imageUrl }: ProjectProps) => {
           </p>
           <p className='mt-4'>
             {url.length === 1 ? (
-              <a href={url[0]} target='_blank' className='font-bold'>
-                {url[0]}
-              </a>
+              url[0].online ? (
+                <a href={url[0].url} target='_blank' className='font-bold'>
+                  {url[0].url}
+                </a>
+              ) : (
+                <p className='font-bold'>Offline</p>
+              )
             ) : (
               url.map((link, index) => (
-                <a href={link} target='_blank' key={`${link}${index}`}>
-                  {link.includes('play.google.com') ? (
+                <a href={link.url} target='_blank' key={`${link}${index}`}>
+                  {link.url.includes('play.google.com') ? (
                     <IoLogoGooglePlaystore className='text-gray-700 text-4xl inline-block mr-6 mt-4 dark:text-white/70' />
                   ) : (
                     <IoLogoAppleAppstore className='text-gray-700 text-4xl inline-block mt-4 dark:text-white/70' />

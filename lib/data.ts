@@ -92,7 +92,7 @@ export const projectsData: ProjectProps[] = [
       'Instagram API',
       'Resend Email',
     ],
-    url: ['https://youkhana.info'],
+    url: [{ url: 'https://youkhana.info', online: true }],
     imageUrl: youkhanaImg,
   },
   {
@@ -107,7 +107,7 @@ export const projectsData: ProjectProps[] = [
       'Firebase',
       'Zustand',
     ],
-    url: ['https://marketplace.playtoday.cc'],
+    url: [{ url: 'https://marketplace.playtoday.cc', online: false }],
     imageUrl: marketplaceImg,
   },
   {
@@ -115,7 +115,7 @@ export const projectsData: ProjectProps[] = [
     description:
       "I was in charge of the full project. It's a website to showcase the Golf app we have made on React-Native.",
     tags: ['React', 'TypeScript', 'Postgresql', 'Firebase', 'Zustand'],
-    url: ['https://app.playtoday.cc'],
+    url: [{ url: 'https://app.playtoday.cc', online: true }],
     imageUrl: appImg,
   },
   {
@@ -124,8 +124,14 @@ export const projectsData: ProjectProps[] = [
       'I was in charge of all the Wallet section (Show the badges, balance, purchase Crypto,...).',
     tags: ['React-Native', 'Mobx', 'Postgresql', 'Firebase', 'Polygon', 'AWS'],
     url: [
-      'https://play.google.com/store/apps/details?id=cc.playtoday.golfapp',
-      'https://apps.apple.com/au/app/play-today/id1631790603',
+      {
+        url: 'https://play.google.com/store/apps/details?id=cc.playtoday.golfapp',
+        online: true,
+      },
+      {
+        url: 'https://apps.apple.com/au/app/play-today/id1631790603',
+        online: true,
+      },
     ],
     imageUrl: golfImg,
   },
@@ -134,7 +140,7 @@ export const projectsData: ProjectProps[] = [
     description:
       'The React front-end initialises a Unity instance to render the WebGL project and handles user authentication, transferring the data to the WebGL build.',
     tags: ['React', 'TypeScript', 'Firebase', 'Zustand'],
-    url: ['https://playtoday.cc'],
+    url: [{ url: 'https://playtoday.cc', online: true }],
     imageUrl: metaverseImg,
   },
 ];
